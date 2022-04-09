@@ -1,0 +1,177 @@
+header {
+    width: 100%;
+    background-color: var(--color1);
+    padding: 15px;
+    color: white;
+    font-size: 1.5em;
+    text-align: end;
+}
+
+
+
+i {
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+main {
+    height: 100vh;
+    font-family: 'Catamaran', sans-serif;
+
+
+}
+
+div.container {
+    padding: 50px 50px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+
+h1 {
+    font-weight: 900;
+    padding-top: 30px;
+    font-size: 3.5em;
+    text-align: center;
+    color: var(--color5);
+
+}
+
+h2 {
+    font-weight: 600;
+}
+
+div.image {
+    width: 80%;
+    position: absolute;
+    bottom: -10px;
+    left: -70px;
+}
+
+section {
+    padding-top: 40px;
+    font-size: 0.8em;
+    color: var(--color1);
+}
+
+button {
+    margin-top: 5px;
+    padding: 0.5em 2em;
+    border: 2px solid var(--color1);
+    border-radius: 5px;
+    background-color: var(--color1);
+    font-weight: 600;
+    color: white;
+}
+
+span {
+
+    font-weight: 600;
+}
+
+footer {
+    display: none;
+}
+
+/* ------------------------------------------------- */
+/* media queries 600px */
+@media(min-width: 37.5em) {
+    div.image {
+        width: 65%;
+        bottom: -60px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    section {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 0.90em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+/* media queries 768px */
+@media(min-width: 48em) {
+    div.image {
+        width: 70%;
+        bottom: -240px;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    section {
+        text-align: center;
+        padding-top: 40px;
+        font-size: 1.15em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+
+}
+
+/* media queries 1004px */
+@media(min-width: 62.750em) {
+
+    div.image {
+        width: 60%;
+        position: absolute;
+        bottom: 0px;
+        left: -150px;
+    }
+
+    h1 {
+        font-size: 6em;
+        text-align: end;
+    }
+
+
+    section {
+        text-align: end;
+        padding-top: 40px;
+        padding-left: 550px;
+        font-size: 1.10em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    div.container {
+        padding-top: 100px;
+    }
+
+    p {
+        text-align: right;
+        text-justify: inter-word;
+    }
+
+    button {
+
+        padding: 1em 2.5em;
+        margin-top: 45px;
+
+    }
+
+    header {
+        width: 100%;
+        background-color: var(--color1);
+        padding: 15px;
+        color: white;
+        font-size: 1.5em;
+        text-align: end;
+    }
+
+
+
+}

@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+:root {
+    --mainFont: 'Montserrat', sans-serif;
+    --secondaryFont: 'Handlee', cursive;
+    --marginGrid: 1em;
+    --color1: #f8867c;
+    --color2: #FB728E;
+    --color3: #C22257;
+    --color4: #B5140F;
+    --color5: #FC9B13;
+    --color6: #396BB8;
+
+    --wrapper: 1100px;
+}
