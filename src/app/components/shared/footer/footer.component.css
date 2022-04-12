@@ -1,0 +1,21 @@
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: -50px;
+}
+
+span {
+    color: var(--color1);
+}
+
+
+
+/* media queries 1004px */
+
+@media(min-width: 62.750em) {
+    footer {
+        text-align: center;
+        font-size: 0.75em;
+        margin-top: 120px;
+    }
+}

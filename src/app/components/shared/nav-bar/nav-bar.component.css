@@ -1,0 +1,65 @@
+header {
+    width: 100%;
+    background-color: var(--color1);
+    padding: 15px;
+    color: white;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+
+}
+
+span {
+    font-family: var(--titleFont);
+    font-weight: 600;
+
+}
+
+.logo {
+    padding-top: 3px;
+    font-family: var(--titleFont);
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.log-in {
+    padding-right: 30px;
+    margin-left: auto;
+}
+
+.log-in i {
+    padding-right: 10px;
+    font-size: 1.5em;
+}
+
+.hideElement {
+    display: none;
+}
+
+.displayElement {
+    display: block;
+}
+
+/* media queries 600px */
+
+@media(min-width: 37.5em) {
+    header {
+        font-size: 0.9em;
+    }
+}
+
+/* media queries 768px */
+
+@media(min-width: 48em) {
+    header {
+        font-size: 1em;
+    }
+}
+
+/* media queries 1004px */
+
+@media(min-width: 62.750em) {
+    header {
+        font-size: 1em;
+    }
+}

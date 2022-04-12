@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500&display=swap');
+/* font-family: 'Catamaran', sans-serif;
+font-family: 'Montserrat', sans-serif; */
 
 * {
     margin: 0;
@@ -12,9 +14,13 @@ img {
     display: block;
 }
 
+body {
+    font-family: var(--mainFont)
+}
+
 :root {
     --mainFont: 'Montserrat', sans-serif;
-    --secondaryFont: 'Handlee', cursive;
+    --titleFont: 'Catamaran', sans-serif;
     --marginGrid: 1em;
     --color1: #f8867c;
     --color2: #FB728E;
@@ -22,6 +28,5 @@ img {
     --color4: #B5140F;
     --color5: #FC9B13;
     --color6: #396BB8;
-
     --wrapper: 1100px;
 }

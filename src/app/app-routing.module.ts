@@ -6,7 +6,7 @@ import { QuizComponent } from './components/quiz/quiz.component';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: HomeComponent },
+  { path: '', pathMatch: 'full', redirectTo: "/home" },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'quiz', component: QuizComponent },
