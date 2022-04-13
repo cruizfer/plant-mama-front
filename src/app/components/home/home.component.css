@@ -1,12 +1,9 @@
-main {
-    height: 100vh;
-    font-family: var(--mainFont);
-}
-
 div.container {
     padding: 50px 50px 0px 50px;
     margin: 0 auto;
     position: relative;
+    font-family: var(--mainFont);
+
 
 }
 
@@ -35,7 +32,7 @@ figure.image {
 section {
     padding-top: 15px;
     font-size: 0.75em;
-    color: var(--color1);
+    color: var(--color5);
 }
 
 button {

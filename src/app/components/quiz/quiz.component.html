@@ -1,1 +1,15 @@
-<p>quiz works!</p>
+<div class="container" *ngIf="activeComponent">
+    <aside>
+        <div>
+            <h2>Welcome to our quiz.</h2>
+            <p>It will take you less than listen to your favorite song. We promise 🤞 </p>
+        </div>
+    </aside>
+    <div class="quiz">
+        <app-question [question]="arrQuestions[currentQuestion].title" [number]="currentQuestion+1"></app-question>
+        <app-answers (selectedAnswer)="onSelectedAnswer($event)" [answers]="arrQuestions[currentQuestion].answers"></app-answers>
+
+    </div>
+
+</div>
+<app-login *ngIf="!activeComponent"></app-login>

@@ -1,0 +1,44 @@
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer {
+    padding: 5px;
+    border: 2px solid #FBCE37;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: #FBCE37;
+}
+
+.answer:hover {
+
+    border: 2px solid #f7d771;
+    background-color: #f7d771;
+}
+
+p {
+    padding: 10px 0px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/* media queries 768px */
+
+@media(min-width: 48em) {
+    p {
+        font-weight: normal;
+        font-size: 1.5em;
+    }
+
+}
+
+/* media queries 1004px */
+
+@media(min-width: 62.750em) {
+    p {
+        font-size: 1.5em;
+    }
+
+}

@@ -8,6 +8,7 @@ font-family: 'Montserrat', sans-serif; */
     box-sizing: border-box;
 }
 
+
 img {
     width: 100%;
     height: auto;
@@ -22,7 +23,7 @@ body {
     --mainFont: 'Montserrat', sans-serif;
     --titleFont: 'Catamaran', sans-serif;
     --marginGrid: 1em;
-    --color1: #f8867c;
+    --color1: #FBCE37;
     --color2: #FB728E;
     --color3: #C22257;
     --color4: #B5140F;

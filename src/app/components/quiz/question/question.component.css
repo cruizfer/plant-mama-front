@@ -1,0 +1,44 @@
+span {
+    padding-right: 5px;
+}
+
+i {
+    padding-top: 2px;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+
+}
+
+p {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+
+/* media queries 768px */
+
+@media(min-width: 48em) {
+    p {
+        font-size: 1.5em;
+    }
+
+}
+
+/* media queries 1004px */
+
+@media(min-width: 62.750em) {
+    p {
+        font-size: 1.5em;
+    }
+
+    i {
+        padding-top: 6px;
+    }
+
+    span {
+        font-size: 1.5em;
+    }
+}

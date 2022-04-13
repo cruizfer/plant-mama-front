@@ -5,7 +5,15 @@ footer {
 }
 
 span {
-    color: var(--color1);
+    color: var(--color5);
+}
+
+.hideElement {
+    display: none;
+}
+
+.displayElement {
+    display: block;
 }
 
 

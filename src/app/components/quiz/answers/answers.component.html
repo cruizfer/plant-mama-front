@@ -1,0 +1,5 @@
+<div class="answers">
+    <button class="answer" *ngFor="let answer of answers; let ind= index" (click)="onClick(ind)">
+        <p>{{answer}}</p>
+    </button>
+</div>

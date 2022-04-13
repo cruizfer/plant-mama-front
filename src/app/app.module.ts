@@ -7,6 +7,9 @@ import { LoginComponent } from './components/login/login.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { QuestionsComponent } from './components/quiz/question/question.component';
+import { AnswersComponent } from './components/quiz/answers/answers.component';
+import { RoleScreenComponent } from './components/quiz/role-screen/role-screen.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     LoginComponent,
     QuizComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    QuestionsComponent,
+    AnswersComponent,
+    RoleScreenComponent
   ],
   imports: [
     BrowserModule,
