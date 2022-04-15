@@ -10,6 +10,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { QuestionsComponent } from './components/quiz/question/question.component';
 import { AnswersComponent } from './components/quiz/answers/answers.component';
 import { RoleScreenComponent } from './components/quiz/role-screen/role-screen.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RoleScreenComponent } from './components/quiz/role-screen/role-screen.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

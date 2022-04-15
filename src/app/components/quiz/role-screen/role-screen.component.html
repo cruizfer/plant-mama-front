@@ -1,1 +1,52 @@
-<p>role-screen works!</p>
+<div class="container">
+    <section class="leftSection">
+        <h2>Thank you!</h2>
+        <p>Your perfect match is a beautiful <span>{{plantResult}}</span>.</p>
+        <p>If you want to get matched and receive weekly plant care tips, create an account and level-up your gardening skill . </p>
+        <figure>
+            <img src="{{plantImage}}" alt="plant">
+        </figure>
+
+    </section>
+    <section class="rightSection">
+
+        <form [formGroup]="form">
+            <div class="mb-1">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" formControlName="name">
+            </div>
+            <div class="mb-1">
+                <label class="form-label">Surname</label>
+                <input type="text" name="surname" formControlName="surname">
+            </div>
+            <div class="mb-1">
+                <label class="form-label">Mail</label>
+                <input type="text" name="mail" formControlName="mail">
+            </div>
+            <div class="mb-1">
+                <label class="form-label">Password</label>
+                <input type="password" name="password" formControlName="password">
+            </div>
+            <div class="mb-1">
+                <label class="form-label">Birthday Date</label>
+                <input type="date" name="birthday_date" formControlName="birthday_date">
+            </div>
+            <div class="mb-4">
+                <label class="form-label">Expertise</label>
+                <select formControlName="expertise">
+                    <option value="beginner"> Beginner: Most of my plants die</option>
+                    <option value="intermediate">Intermediate: Some experience (and success!) with houseplants</option>
+                    <option value="master">Master: My dream is to make my house into a jungle </option>
+
+
+                </select>
+            </div>
+
+            <div class="mb-1 d-grid gap-2 mt-4 btn">
+                <input type="submit" value="Create an account">
+            </div>
+
+
+        </form>
+    </section>
+</div>

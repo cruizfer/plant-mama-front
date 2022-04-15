@@ -1,0 +1,64 @@
+h2 {
+    font-weight: 900;
+    color: var(--color5);
+    font-family: var(--titleFont);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-weight: 700;
+    color: var(--color5);
+}
+
+.btn {
+    background-color: var(--color1);
+}
+
+.btn input {
+    border: none;
+    background-color: var(--color1);
+}
+
+img {
+
+    border-radius: 50%;
+}
+
+
+
+/* media queries 600px */
+
+@media(min-width: 37.5em) {}
+
+/* media queries 768px */
+
+@media(min-width: 48em) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100vh;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .leftSection {
+        width: 30%;
+
+    }
+
+    .rightSection {
+        width: 70%;
+        padding-left: 5%;
+    }
+}
