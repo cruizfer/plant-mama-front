@@ -1,8 +1,11 @@
 <header>
     <div class="logo" [routerLink]="['/home']" [ngClass]="{hideElement: (route == '/home'),displayElement:(route != '/home')}">Plant Mama</div>
 
-    <div class="log-in" routerLink="/login">
+    <div class="log-in" routerLink="/login" [ngClass]="{hideElement: (route == '/user'),displayElement:(route != '/user')}">
         <i class="fa-solid fa-circle-user"></i><span>Log-in</span>
+    </div>
+    <div class="log-out" [ngClass]="{hideElement: (route != '/user'),displayElement:(route == '/user')}">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Log-out</span>
     </div>
 
 </header>

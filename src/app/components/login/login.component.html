@@ -1,1 +1,17 @@
-<p>login works!</p>
+<section class="container">
+    <h2>Sign Up</h2>
+    <form>
+        <label for="">Email Adress</label>
+        <input type="text" placeholder="Enter a valid email address">
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter password">
+        <div class="form-check mb-0">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+            <label class="form-check-label" for="form2Example3">
+                Remember me
+            </label>
+        </div>
+    </form>
+    <button>Login</button>
+    <h5>Don't have an account? <span [routerLink]="['/quiz']">Register here.</span></h5>
+</section>

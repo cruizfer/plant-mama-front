@@ -11,6 +11,7 @@ import { QuestionsComponent } from './components/quiz/question/question.componen
 import { AnswersComponent } from './components/quiz/answers/answers.component';
 import { RoleScreenComponent } from './components/quiz/role-screen/role-screen.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UserFeedComponent } from './components/user-feed/user-feed.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     QuestionsComponent,
     AnswersComponent,
-    RoleScreenComponent
+    RoleScreenComponent,
+    UserFeedComponent
   ],
   imports: [
     BrowserModule,

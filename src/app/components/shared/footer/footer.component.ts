@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
 
   ngDoCheck() {
     this.route = window.location.href.split('http://localhost:4200')[1]
-    console.log(this.route)
+
 
   }
 }

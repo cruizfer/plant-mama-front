@@ -53,7 +53,7 @@ export class QuizComponent implements OnInit {
 
 
     this.valor += this.arrQuestions[this.currentQuestion].interval[$ind]
-    console.log(this.valor)
+
 
 
     if (this.currentQuestion < this.arrQuestions.length - 1) {
@@ -66,7 +66,7 @@ export class QuizComponent implements OnInit {
       switch (this.valor) {
         case 15: localStorage.setItem('quiz_role', String('Cactus Selenicereus Anthonianus'));
           break;
-        case 25: localStorage.setItem('quiz_role', String('Aloe Vera'));
+        case 25: localStorage.setItem('quiz_role', String('Aloe Godzilla'));
           break;
         case 16: localStorage.setItem('quiz_role', String('Peperomia Hope'));
           break;

@@ -17,8 +17,12 @@ export class RoleScreenComponent implements OnInit {
       name: new FormControl(''),
       surname: new FormControl(''),
       nickname: new FormControl('', [Validators.required, Validators.minLength(10)]),
-      mail: new FormControl(''),
-      password: new FormControl(''),
+      mail: new FormControl('',
+        [Validators.pattern(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/)]
+      ),
+      password: new FormControl('',
+        [Validators.pattern(/^[a-zA-Z]\w{3,14}$/)]
+      ),
       birthday_date: new FormControl(''),
       expertise: new FormControl(''),
 
@@ -32,11 +36,11 @@ export class RoleScreenComponent implements OnInit {
         break;
       case 'Cactus Selenicereus Anthonianus': this.plantImage = '../../../../assets/plants/cactus.jpeg';
         break;
-      case 'Aloe Vera': this.plantImage = '../../../../assets/plants/aloevera.jpeg';
+      case 'Aloe Godzilla': this.plantImage = '../../../../assets/plants/aloegodzilla.jpeg';
         break;
       case 'Peperomia Hope': this.plantImage = '../../../../assets/plants/peperomiacolgante.jpeg';
         break;
-      case 'Sanseviera': this.plantImage = '../../../../assets/plants/';
+      case 'Sanseviera': this.plantImage = '../../../../assets/plants/sansevieria.jpeg';
         break;
       case 'Zamioculca': this.plantImage = '../../../../assets/plants/zamioculca.jpeg';
         break;
@@ -59,5 +63,8 @@ export class RoleScreenComponent implements OnInit {
 
   }
 
+  onSubmit() {
+    console.log(123)
+  }
 }
 

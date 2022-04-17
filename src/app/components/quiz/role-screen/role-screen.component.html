@@ -10,7 +10,7 @@
     </section>
     <section class="rightSection">
 
-        <form [formGroup]="form">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="mb-1">
                 <label class="form-label">Name</label>
                 <input type="text" name="name" formControlName="name">
@@ -37,8 +37,6 @@
                     <option value="beginner"> Beginner: Most of my plants die</option>
                     <option value="intermediate">Intermediate: Some experience (and success!) with houseplants</option>
                     <option value="master">Master: My dream is to make my house into a jungle </option>
-
-
                 </select>
             </div>
 
