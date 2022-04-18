@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Question } from '../interfaces/quiz-question.interface';
 import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 
 
@@ -18,7 +19,7 @@ export class QuizComponent implements OnInit {
   activeComponent: boolean;
 
 
-  constructor() {
+  constructor(private router: Router) {
 
     this.arrQuestions = [
       {
