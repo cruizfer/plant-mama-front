@@ -12,6 +12,7 @@ import { AnswersComponent } from './components/quiz/answers/answers.component';
 import { RoleScreenComponent } from './components/quiz/role-screen/role-screen.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserFeedComponent } from './components/user-feed/user-feed.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,13 @@ import { UserFeedComponent } from './components/user-feed/user-feed.component';
     AnswersComponent,
     RoleScreenComponent,
     UserFeedComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

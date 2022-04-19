@@ -27,6 +27,7 @@ span {
 .btn input {
     border: none;
     background-color: var(--color1);
+    width: 100%;
 }
 
 img {
@@ -56,10 +57,12 @@ img {
     .leftSection {
         width: 30%;
 
+
     }
 
     .rightSection {
         width: 70%;
         padding-left: 10%;
+
     }
 }

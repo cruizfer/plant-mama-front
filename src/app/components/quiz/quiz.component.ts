@@ -15,6 +15,7 @@ export class QuizComponent implements OnInit {
   arrQuestions: Question[];
   currentQuestion: number;
   valor: number;
+  idRole: any;
   exception: string
   activeComponent: boolean;
 
@@ -52,11 +53,21 @@ export class QuizComponent implements OnInit {
 
   onSelectedAnswer($ind: number) {
 
+    //Saving the role on LocalStorage (based on selected answer in question 1)
+    this.idRole = this.arrQuestions[0].answers[$ind]
+    switch (this.idRole) {
+      case 'Dry as a powder house': localStorage.setItem('quiz_idRole', '1');
+        break;
+      case 'Average Prototype': localStorage.setItem('quiz_idRole', '2');
+        break;
+      case 'Humidity is my bread and butter': localStorage.setItem('quiz_idRole', '3');
+        break;
+      default:
+        console.log(+ this.idRole + 'is not valid as a quiz value');
+    }
 
+    //Saving total point result.
     this.valor += this.arrQuestions[this.currentQuestion].interval[$ind]
-
-
-
     if (this.currentQuestion < this.arrQuestions.length - 1) {
       this.currentQuestion++;
     } else {

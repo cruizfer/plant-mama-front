@@ -27,16 +27,6 @@ h2 {
     padding-bottom: 10px;
 }
 
-button {
-    border: none;
-    border-radius: 2px;
-    background-color: var(--color1);
-    padding: 5px 12px;
-    margin-top: 10px;
-    color: white;
-    font-weight: 900;
-}
-
 h5 {
     font-weight: 400;
     font-size: 0.85em;
@@ -52,6 +42,21 @@ h5 span {
 ::placeholder {
     font-size: 0.75em;
 
+}
+
+div.btn {
+    background-color: var(--color1);
+    text-align: center;
+}
+
+.btn input {
+    border: none;
+    background-color: var(--color1);
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
 }
 
 /* media queries 600px */
@@ -72,10 +77,6 @@ h5 span {
 
     h2 {
         font-size: 1.75em;
-    }
-
-    button {
-        padding: 10px 17px;
     }
 
     form input {
