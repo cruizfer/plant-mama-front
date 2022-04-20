@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Question } from '../interfaces/quiz-question.interface';
-import Swal from 'sweetalert2';
+import { Question } from '../../interfaces/quiz-question.interface';
 import { Router } from '@angular/router';
 
 

@@ -51,6 +51,14 @@ span {
     display: block;
 }
 
+button {
+    border: none;
+    background-color: var(--color1);
+    color: white;
+    font-weight: 600;
+    font-family: var(--titleFont);
+}
+
 /* media queries 600px */
 
 @media(min-width: 37.5em) {

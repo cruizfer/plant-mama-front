@@ -1,0 +1,23 @@
+<div class="container">
+    <section class="bookmark">
+        <article class="post" *ngFor="let post of arrSavedPost">
+            <div class="content-top">
+                <h3>{{post.title}}</h3>
+                <h4>{{post.subtitle}}</h4>
+            </div>
+            <div class="content-bottom">
+                <p>{{post.content}}</p>
+            </div>
+            <div class="interaction-btn">
+
+                <a href="https://www.facebook.com/sharer/sharer.php?u=[url]"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/intent/tweet?text=[text]&url=[url]&hashtags=[hashtag]"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://api.whatsapp.com/send?text=[text]"><i class="fa-brands fa-whatsapp"></i></a> <!-- url es la url donde redirige.  -->
+            </div>
+
+
+        </article>
+
+
+    </section>
+</div>

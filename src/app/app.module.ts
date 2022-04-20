@@ -13,6 +13,8 @@ import { RoleScreenComponent } from './components/quiz/role-screen/role-screen.c
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserFeedComponent } from './components/user-feed/user-feed.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BookmarksComponent } from './components/bookmarks/bookmarks.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     QuestionsComponent,
     AnswersComponent,
     RoleScreenComponent,
-    UserFeedComponent
+    UserFeedComponent,
+    BookmarksComponent,
 
   ],
   imports: [

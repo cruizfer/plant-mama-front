@@ -21,6 +21,7 @@ export class RoleScreenComponent implements OnInit {
     this.userRoleId = 0;
     this.userRoleName = '';
 
+
     this.form = new FormGroup({
       name: new FormControl(''),
       surname: new FormControl(''),
@@ -87,12 +88,13 @@ export class RoleScreenComponent implements OnInit {
         break;
 
     }
-
+    console.log(this.plantImage)
   }
 
   async onSubmit() {
     try {
       this.form.value.user_rol_id = this.userRoleId;
+      this.form.value.user_image = this.plantImage;
       const response = await this.userService.createUser(this.form.value);
       console.log(response)
     } catch (error) {
