@@ -27,8 +27,9 @@ export class LoginComponent implements OnInit {
     try {
       const response = await this.userService.login(this.form.value);
 
+
       if (response.success == 'valid nickname') {
-        localStorage.setItem('token_user', String(response.token));
+        sessionStorage.setItem('token_user', String(response.token));
         setTimeout(() => {
           this.router.navigate(['/feed']);
         }, 1000);

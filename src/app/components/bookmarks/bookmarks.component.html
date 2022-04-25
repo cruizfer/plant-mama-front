@@ -1,19 +1,21 @@
 <div class="container">
+    <h2>Logbook</h2>
+    <h5>Keep reading and level up your skills!</h5>
+    <p class="message" *ngIf="arrSavedPost?.length === 0"> Congrats, you are one step closer to being a Green Master 🐝 ! </p>
+
     <section class="bookmark">
         <article class="post" *ngFor="let post of arrSavedPost">
             <div class="content-top">
+
                 <h3>{{post.title}}</h3>
                 <h4>{{post.subtitle}}</h4>
             </div>
             <div class="content-bottom">
                 <p>{{post.content}}</p>
             </div>
-            <div class="interaction-btn">
-
-                <a href="https://www.facebook.com/sharer/sharer.php?u=[url]"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/intent/tweet?text=[text]&url=[url]&hashtags=[hashtag]"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://api.whatsapp.com/send?text=[text]"><i class="fa-brands fa-whatsapp"></i></a> <!-- url es la url donde redirige.  -->
-            </div>
+            <button class="interaction-btn" (click)="onClick(post.id)">
+                <i class="fa-solid fa-check"></i>
+            </button>
 
 
         </article>

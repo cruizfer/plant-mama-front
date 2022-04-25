@@ -14,6 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { UserFeedComponent } from './components/user-feed/user-feed.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BookmarksComponent } from './components/bookmarks/bookmarks.component';
+import { NurseriesComponent } from './components/nurseries/nurseries.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -29,13 +31,22 @@ import { BookmarksComponent } from './components/bookmarks/bookmarks.component';
     RoleScreenComponent,
     UserFeedComponent,
     BookmarksComponent,
+    NurseriesComponent,
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBMOcTcAkobrlfKIBOJNz6lDw2R5fJsk_Q'
+    })
+
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

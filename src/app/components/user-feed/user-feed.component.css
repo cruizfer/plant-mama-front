@@ -27,6 +27,16 @@ h2 {
     padding: 10px;
 }
 
+h3 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
 .bottom-profile {
     text-align: center;
     padding-top: 10px;
@@ -35,6 +45,17 @@ h2 {
 div.content {
     padding: 10px 0px;
     border-top: 1px solid salmon;
+    text-decoration: none;
+
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
+.content a:hover {
+    color: white;
 }
 
 .bookmark,
@@ -44,7 +65,9 @@ div.content {
     height: 30px;
     align-items: baseline;
     padding-left: 5%;
+    text-decoration: none;
 }
+
 
 .bookmark p {
     padding-left: 9%;
@@ -66,9 +89,10 @@ div.content {
 }
 
 .post {
-    padding: 5%;
+    padding: 3%;
     border: 1px solid var(--color5);
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .interaction-btn {
@@ -76,6 +100,7 @@ div.content {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+
 
 }
 
@@ -87,7 +112,17 @@ i {
     color: var(--color5);
 }
 
-.fa-bookmark:hover {
+.fa-bookmark span {
+
+    font-family: var(--mainFont);
+    padding-left: 5px;
+    color: var(--color5);
+    font-size: 0.75em;
+}
+
+
+
+.fa-bookmark span:hover {
     color: #c47300;
 }
 
@@ -114,6 +149,14 @@ i {
     .feed {
 
         padding: 0% 3%;
+    }
+
+    .interaction-btn {
+        padding-top: 5px;
+    }
+
+    .post {
+        padding: 2%;
     }
 }
 

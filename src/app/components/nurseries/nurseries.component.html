@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Find your closest nurseries and gardening stores. </h2>
+    <h5>Remember, shopping local reduces the carbon footprint 🌱🌍 </h5>
+    <div class="content">
+        <section>
+            <article class="location" *ngFor="let location of locations; let ind= index" (click)="onClick(ind)">
+                <h3><span>Name:</span> {{location.store_name}}</h3>
+                <h4><span>Location:</span> {{location.store_location}}</h4>
+                <a href="tel:+{{location.phone_number}}">{{location.phone_number}}</a>
+            </article>
+        </section>
+        <div>
+            <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="15" [fitBounds]="false">
+                <agm-marker *ngFor="let location of locations" [latitude]="location.latitude" [longitude]="location.longuitude" [agmFitBounds]="true">
+                    <agm-info-window>
+                        <span>{{location.store_name}}</span>
+                        <p>{{location.store_location}}</p>
+                    </agm-info-window>
+                </agm-marker>
+
+            </agm-map>
+        </div>
+    </div>
+
+
+</div>

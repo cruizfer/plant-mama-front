@@ -24,7 +24,7 @@ export class UserService {
   getLoggedUser() {
     const httpOptions = {
       headers: new HttpHeaders(
-        { authentication: localStorage.getItem('token_user') }
+        { authentication: sessionStorage.getItem('token_user') }
       )
     }
     return firstValueFrom(this.httpClient.get<any>(this.baseUrl + 'user/profile', httpOptions))

@@ -18,10 +18,19 @@ export class PostService {
     return firstValueFrom(this.httpClient.get<Post[]>(this.baseUrl + 'user/feed'))
   };
 
+  getByExpertise() {
+    const httpOptions = {
+      headers: new HttpHeaders(
+        { authentication: sessionStorage.getItem('token_user') }
+      )
+    }
+    return firstValueFrom(this.httpClient.get<any>(this.baseUrl + 'posts/by-expertise', httpOptions))
+  };
+
   savedPostsByUser(body: any) {
     const httpOptions = {
       headers: new HttpHeaders(
-        { authentication: localStorage.getItem('token_user') }
+        { authentication: sessionStorage.getItem('token_user') }
       )
     }
     return firstValueFrom(this.httpClient.post<any>(this.baseUrl + 'posts/saved', body, httpOptions))
@@ -30,14 +39,18 @@ export class PostService {
   getBookmarks() {
     const httpOptions = {
       headers: new HttpHeaders(
-        { authentication: localStorage.getItem('token_user') }
+        { authentication: sessionStorage.getItem('token_user') }
       )
     }
     return firstValueFrom(this.httpClient.get<any>(this.baseUrl + 'posts/bookmark', httpOptions))
   };
 
-  getPostById(body: any) {
-    return firstValueFrom(this.httpClient.get<any>(this.baseUrl + 'id', body))
-
-  }
+  deletePostById(post_id: number) {
+    const httpOptions = {
+      headers: new HttpHeaders(
+        { authentication: sessionStorage.getItem('token_user') }
+      )
+    }
+    return firstValueFrom(this.httpClient.delete<any>(this.baseUrl + `posts/delete-post/${post_id}`, httpOptions))
+  };
 }

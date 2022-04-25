@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class RoleScreenComponent implements OnInit {
   form: FormGroup
 
 
-  constructor(private userService: UserService) {
+  constructor(private userService: UserService, private router: Router) {
     this.plantImage = '';
     this.plantResult = '';
     this.userRoleId = 0;
@@ -95,12 +96,18 @@ export class RoleScreenComponent implements OnInit {
     try {
       this.form.value.user_rol_id = this.userRoleId;
       this.form.value.user_image = this.plantImage;
+
       const response = await this.userService.createUser(this.form.value);
-      console.log(response)
+
+      localStorage.setItem('user_expertise', String(this.form.value.expertise));
+
     } catch (error) {
       console.log(error)
     };
 
+    setTimeout(() => {
+      this.router.navigate(['/login']);
+    }, 200);
 
   }
 }

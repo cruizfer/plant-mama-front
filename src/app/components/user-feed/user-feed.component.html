@@ -17,11 +17,13 @@
             </div>
 
         </div>
-        <div class="content">
+        <div class="content" [routerLink]="['/nurseries']">
             <div class="maps">
                 <i class="fa-solid fa-map"></i>
                 <p>Find a plant nursery!</p>
             </div>
+
+
 
         </div>
 
@@ -32,11 +34,9 @@
                 <h3>{{post.title}}</h3>
                 <h4>{{post.subtitle}}</h4>
             </div>
-            <div class="content-bottom">
-                <p>{{post.content}}</p>
-            </div>
+
             <div class="interaction-btn">
-                <i class="fa-solid fa-bookmark" (click)="onClick(post.id)"></i>
+                <i class="fa-solid fa-bookmark" (click)="onClick(post.id)"> <span>Save it!</span></i>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=[url]"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://twitter.com/intent/tweet?text=[text]&url=[url]&hashtags=[hashtag]"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://api.whatsapp.com/send?text=[text]"><i class="fa-brands fa-whatsapp"></i></a> <!-- url es la url donde redirige.  -->

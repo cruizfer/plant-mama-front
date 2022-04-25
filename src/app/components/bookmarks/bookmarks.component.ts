@@ -10,25 +10,24 @@ import { Post } from '../../interfaces/post.interface';
 export class BookmarksComponent implements OnInit {
 
   arrSavedPost: any;
-  savedPost: any
+  savedPost: any;
+  deletePost: any;
+
 
   constructor(private postService: PostService) {
-    this.arrSavedPost = []
   }
 
   async ngOnInit() {
-    this.arrSavedPost = await this.postService.getBookmarks()
-
-    console.log(this.arrSavedPost)//Array of post
-
-
-    for (let post of this.arrSavedPost) {
-      console.log(post.post_id)// IDpost
-      /* this.savedPost = await this.postService.getPostById(post.post_id)
-      console.log(this.savedPost) */
-
-    }
+    this.arrSavedPost = await this.postService.getBookmarks();
+    console.log(this.arrSavedPost)
 
   }
 
+  async onClick($event) {
+    this.deletePost = await this.postService.deletePostById($event)
+    console.log(this.deletePost)
+
+    this.arrSavedPost = await this.postService.getBookmarks();
+    console.log(this.arrSavedPost)
+  }
 }
